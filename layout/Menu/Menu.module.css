@@ -1,0 +1,70 @@
+.firstLevel {
+	display: grid;
+	align-items: center;
+	margin-top: 20px;
+	font-size: 18px;
+	font-weight: 500;
+	gap: 20px;
+	grid-template-columns: 24px 1fr;
+	line-height: 25px;
+}
+
+.firstLevelActive,
+.firstLevel:hover {
+	color: var(--primary);
+}
+
+.firstLevelActive svg,
+.firstLevel:hover svg {
+	fill: var(--primary);
+}
+
+.secondLevel {
+	margin-bottom: 10px;
+
+	color: var(--gray-dark);
+
+	cursor: pointer;
+	font-size: 12px;
+
+	font-weight: 300;
+	line-height: 16px;
+	text-transform: uppercase;
+}
+
+.secondBlock {
+	padding-left: 32px;
+
+	border-left: 1px solid #DFDFDF;
+	margin-top: 15px;
+	margin-left: 12px;
+}
+.secondLevelBlock {
+	display: none;
+}
+
+.secondLevelBlockOpened {
+	display: block;
+}
+
+.secondLevelBlockOpened:last-child {
+	margin-bottom: 20px;
+}
+
+.thirdLevel {
+	display: block;
+	margin-bottom: 10px;
+
+	color: var(--gray-dark);
+
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 19px;
+}
+
+
+.thirdLevelActive,
+.thirdLevel:hover {
+	color: var(--primary);
+}
