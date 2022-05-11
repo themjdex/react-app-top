@@ -33,7 +33,7 @@
 		grid-template-columns: minmax(320px, 1fr);
 	}
 	.sidebar {
-		display: none;
+		display: none !important;
 	}
 	.header {
 		display: block;

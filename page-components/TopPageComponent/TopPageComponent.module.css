@@ -1,0 +1,19 @@
+.wrapper {
+	margin-top: 40px;
+}
+
+.title {
+	display: grid;
+	align-items: baseline;
+	gap: 20px;
+	grid-template-columns: auto 1fr auto;
+	justify-items: left;
+}
+
+.hhTitle {
+	display: grid;
+	align-items: baseline;
+	gap: 20px;
+	grid-template-columns: auto 1fr;
+	justify-items: left;
+}
