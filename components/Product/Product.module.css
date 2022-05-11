@@ -1,0 +1,139 @@
+.product {
+	display: grid;
+	padding: 30px;
+	margin-bottom: 30px;
+	grid-template-columns: [start] 70px [logoend] 30px [titlestart] calc(50% - 100px) [middle] 1fr [pricestart] auto [priceend] 40px [creditstart] auto [creditend] 40px [ratingstart] auto [end];
+}
+
+.logo {
+	grid-column: start / logoend;
+	grid-row: 1 / span 2;
+}
+
+.logo > img {
+	width: 70px;
+	height: 70px;
+	border-radius: 5px;
+}
+
+.title, .tags {
+	grid-column: titlestart / middle;
+}
+
+.price, .priceTitle {
+	grid-column: pricestart / priceend;
+}
+
+.credit, .creditTitle {
+	grid-column: creditstart / creditend;
+}
+
+.rating, .rateTitle {
+	grid-column: ratingstart / end;
+}
+
+.hr, .description {
+	grid-column: start / end;
+}
+
+.features {
+	grid-column: start / middle;
+}
+
+.advBlock {
+	grid-column: middle / end;
+}
+
+.actions {
+	grid-column: start / end;
+}
+
+.title {
+	align-self: flex-end;
+	margin-bottom: 5px;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 27px;
+}
+
+.price, .credit {
+	align-self: flex-end;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 27px;
+}
+
+.rating {
+	align-self: flex-end;
+}
+
+.priceTitle,
+.creditTitle,
+.rateTitle {
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 19px;
+}
+
+.month {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+.oldPrice {
+	margin-left: 5px;
+}
+
+.category {
+	margin-top: 7px;
+}
+
+.description {
+	margin-bottom: 15px;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.reviewButton {
+	margin-left: 20px;
+}
+.advBlock {
+	font-size: 16px;
+	line-height: 22px;
+}
+.advTitle {
+	font-weight: 700;
+}
+
+.advantages {
+	padding-left: 15px;
+	border-left: 2px solid var(--green);
+	margin-bottom: 20px;
+	font-weight: 400;
+}
+
+.disadvantages {
+	padding-left: 15px;
+	border-left: 2px solid var(--red);
+	font-weight: 400;
+}
+.characteristics {
+	display: grid;
+	align-items: center;
+	padding-right: 60px;
+	font-size: 16px;
+	gap: 10px;
+	grid-template-columns: auto 1fr auto;
+}
+
+.characteristicName {
+	font-weight: 700;
+	line-height: 32px;
+}
+.characteristicDots {
+	border-bottom: 1px dashed var(--gray-light);
+}
+.characteristicValue {
+	font-weight: 500;
+	line-height: 22px;
+}
