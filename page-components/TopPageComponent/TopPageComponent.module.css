@@ -2,6 +2,7 @@
 .title {
 	display: grid;
 	align-items: baseline;
+	margin-bottom: 30px;
 	gap: 20px;
 	grid-template-columns: auto 1fr auto;
 	justify-items: left;
@@ -33,4 +34,10 @@
 	font-size: 20px;
 	font-weight: 600;
 	line-height: 27px;	
+}
+
+@media screen and (max-width: 640px) {
+	.title {
+		grid-template-columns: auto 1fr;
+	}
 }
