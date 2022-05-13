@@ -8,7 +8,10 @@
 	grid-template-columns: 24px 1fr;
 	line-height: 25px;
 }
-
+.firstLevelList {
+	padding: 0;
+	list-style: none;
+}
 .firstLevelActive,
 .firstLevel:hover {
 	color: var(--primary);
@@ -20,7 +23,10 @@
 }
 
 .secondLevel {
+	padding: 0;
+	border: none;
 	margin-bottom: 10px;
+	background: none;
 
 	color: var(--gray-dark);
 
@@ -28,33 +34,35 @@
 	font-size: 12px;
 
 	font-weight: 300;
-	line-height: 16px;
 	text-transform: uppercase;
 }
 
 .secondBlock {
-	padding-left: 32px;
+	padding: 0 0 0 32px;
 
 	border-left: 1px solid #DFDFDF;
 	margin-top: 15px;
 	margin-left: 12px;
+	list-style: none;
+	
 }
 .secondLevelBlock {
 	overflow: hidden;
+	padding: 0;
+	list-style: none;
 }
 
 .thirdLevel {
 	display: block;
+	
 	margin-bottom: 10px;
-
 	color: var(--gray-dark);
 
 	cursor: pointer;
 	font-size: 14px;
 	font-weight: 500;
-	line-height: 19px;
+	outline-offset: -1px;
 }
-
 
 .thirdLevelActive,
 .thirdLevel:hover {

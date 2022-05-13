@@ -19,14 +19,22 @@
 	grid-template-columns: auto auto;
 }
 
-.sort span {
+.sort button {
 	display: grid;
 	align-items: center;
+	border: none;
+	background: none;
 	cursor: pointer;
+	font-size: 16px;
 	gap: 8px;
 	grid-template-columns: 20px 1fr;
+	line-height: 22px;
 }
 
-.sort span:not(.active) {
+.sort button:not(.active) {
 	grid-template-columns: 1fr;
+}
+
+.sortName {
+	display: none;
 }

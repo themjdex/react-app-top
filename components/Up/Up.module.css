@@ -2,7 +2,6 @@
 	position: fixed;
 	right: 40px;
 	bottom: 40px;
-	/* display: flex; */
 
 	width: 40px;
 	height: 40px;
@@ -19,6 +18,14 @@
 	background-color: var(--primary-hover);
 }
 
+.up > button {
+	padding: 0;
+}
+
 .up svg {
-	margin: 0 auto;
+	fill: var(--white);
+}
+
+.up svg * {
+	align-items: center;
 }

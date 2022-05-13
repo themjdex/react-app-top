@@ -110,7 +110,7 @@
 
 .advantages {
 	padding-left: 15px;
-	border-left: 2px solid var(--green);
+	border-left: 2px solid #1DC47E;
 	margin-bottom: 20px;
 	font-weight: 400;
 }
@@ -140,15 +140,17 @@
 	font-weight: 500;
 	line-height: 22px;
 }
-.closed {
+.reviews {
 	overflow: hidden;
-	max-height: 0;
-	padding: 0;
+	padding: 30px;
 }
 
 .opened {
-	max-height: auto;
-	padding: 30px;
+	height: auto;
+}
+ 
+.closed {
+	height: 0;
 }
 
 
