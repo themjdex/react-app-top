@@ -4,6 +4,7 @@ import { ParsedUrlQuery } from 'querystring';
 import { API } from '../../helpers/api';
 import { firstLevelMenu } from '../../helpers/helpers';
 import { MenuItem } from '../../interfaces/menu.interface';
+import { TopLevelCategory } from '../../interfaces/page.interface';
 import { withLayout } from '../../layout/Layout';
 
 
@@ -15,10 +16,11 @@ const Type = ({firstCategory}: TypeProps): JSX.Element => {
 		</>
 	);
 };
+
 export const getStaticPaths: GetStaticPaths = async () => {
 	return {
 		paths: firstLevelMenu.map(m => '/' + m.route),
-		fallback: true,
+		fallback: false,
 	};
 };
 

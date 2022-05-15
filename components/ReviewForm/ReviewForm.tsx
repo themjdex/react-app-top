@@ -62,8 +62,7 @@ export const ReviewForm = ({ productId, isOpened, className, ...props }: ReviewF
 								setRating={field.onChange}
 								error={errors.rating} 
 								tabIndex={isOpened ? 0 : -1}/>
-						)}>
-					</Controller>				
+						)} />				
 				</div>
 				<Textarea {...register('description', {required: {value: true, message: 'Введите текст отзыва'}})} 
 					placeholder='Текст отзыва' 

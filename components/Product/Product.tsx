@@ -9,7 +9,7 @@ import { Button } from '../Button/Button';
 import { devlOfNum, priceRu } from '../../helpers/helpers';
 import { Divider } from '../Divider/Divider';
 import Image from 'next/image';
-import { ForwardedRef, forwardRef, useRef, useState } from 'react';
+import { ForwardedRef, forwardRef, MouseEvent, useRef, useState } from 'react';
 import { Review } from '../Review/Review';
 import { ReviewForm } from '../ReviewForm/ReviewForm';
 import { motion } from 'framer-motion';
@@ -37,9 +37,7 @@ export const Product = motion(forwardRef(({ product, className, ...props }: Prod
 		<div className={className} {...props} ref={ref}>
 			<Card className={styles.product}>
 				<div className={styles.logo}>
-					<Image 
-						// src={process.env.NEXT_PUBLIC_DOMAIN + product.image} 
-						// src={'http://cdn-bucket.hb.bizmrg.com/courses-top-images/2022-05-11/logo.png'} 
+					<img 
 						src={/^https?:\/\//i.test(product.image) ? product.image : process.env.NEXT_PUBLIC_DOMAIN + product.image}
 						alt={product.title}
 						width={70}
