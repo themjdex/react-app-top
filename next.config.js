@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['cdn-bucket.hb.bizmrg.com']
+    domains: ['courses-top.ru', 'cdn-bucket.hb.bizmrg.com']
   },
   webpack(config, options) {
     config.module.rules.push({

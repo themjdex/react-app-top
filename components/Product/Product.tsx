@@ -39,7 +39,8 @@ export const Product = motion(forwardRef(({ product, className, ...props }: Prod
 				<div className={styles.logo}>
 					<Image 
 						// src={process.env.NEXT_PUBLIC_DOMAIN + product.image} 
-						src={'http://cdn-bucket.hb.bizmrg.com/courses-top-images/2022-05-11/logo.png'} 
+						// src={'http://cdn-bucket.hb.bizmrg.com/courses-top-images/2022-05-11/logo.png'} 
+						src={/^https?:\/\//i.test(product.image) ? product.image : process.env.NEXT_PUBLIC_DOMAIN + product.image}
 						alt={product.title}
 						width={70}
 						height={70}
