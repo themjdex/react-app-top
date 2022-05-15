@@ -8,7 +8,6 @@ import { Tag } from '../Tag/Tag';
 import { Button } from '../Button/Button';
 import { devlOfNum, priceRu } from '../../helpers/helpers';
 import { Divider } from '../Divider/Divider';
-import Image from 'next/image';
 import { ForwardedRef, forwardRef, MouseEvent, useRef, useState } from 'react';
 import { Review } from '../Review/Review';
 import { ReviewForm } from '../ReviewForm/ReviewForm';

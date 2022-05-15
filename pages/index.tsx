@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Button, P, Rating, Tag, Htag, Input, Textarea } from '../components';
+import { Htag } from '../components';
 import { withLayout } from '../layout/Layout';
 import axios from 'axios';
 import { GetStaticProps } from 'next';
@@ -7,22 +7,9 @@ import { MenuItem } from '../interfaces/menu.interface';
 import { API } from '../helpers/api';
 
 function Home({ menu }: HomeProps): JSX.Element {
-  const [rating, setRating] = useState<number>(4);
-
   return (
     <>
-      <Htag tag='h1'>Текст</Htag>
-      <Button appearance='primary' arrow='right'>Кнопка</Button>
-      <Button appearance='ghost' arrow='down'>Кнопка</Button>
-      <P size='big'>fn;jsdlhafns;ldjfnasdfn</P>
-      <P size='medium'>fn;jsdlhafns;ldjfnasdfn</P>
-      <P size='small'>fn;jsdlhafns;ldjfnasdfn</P>
-      <Tag size='m' color='red'>Mal</Tag>
-      <Tag size='m' color='green'>Green</Tag>
-      <Tag color='primary'>PPPPP</Tag>
-      <Rating isEditable rating={rating} setRating={setRating}/>
-      <Input placeholder='ntcvn'/>
-      <Textarea placeholder='Введите ваш текст'/>
+      <Htag tag='h1'>Топ курсов</Htag>
     </>
   );
 }

@@ -1,9 +1,7 @@
-import UpIcon from './up.svg';
 import styles from './Up.module.css';
 import { useScrollY } from '../../hooks/useScrollY';
 import { motion, useAnimation } from 'framer-motion';
 import { useEffect } from 'react';
-import ScrollIcon from './top-scroll.svg';
 import { ButtonIcon } from '../ButtonIcon/ButtonIcon';
 
 
@@ -30,7 +28,7 @@ export const Up = (): JSX.Element => {
 				<ButtonIcon 
 					appearance='primary' 
 					icon='up'
-					aria-aria-labelledby='Наверх'
+					aria-labelledby='Наверх'
 					onClick={scrollToTop} />
 		</motion.div>
 	);
